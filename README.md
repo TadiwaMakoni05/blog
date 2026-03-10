@@ -1,8 +1,8 @@
-# TheBlog — Modern Full-Stack Blog Platform
+# Medium — Modern Full-Stack Blog Platform
 
 A premium, full-stack blogging platform built with a high-performance Django backend and a stunning, responsive React frontend. Designed for writers who value aesthetics and readers who crave a seamless experience.
 
-![Home Page Screenshot](frontend/src/assets/preview.png) *(Note: Add your own preview image here)*
+
 
 ## ✨ Features
 
