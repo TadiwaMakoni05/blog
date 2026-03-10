@@ -79,21 +79,21 @@ const AuthorProfile = () => {
               user.username[0]
             )}
           </div>
-          <div className="flex-1">
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl sm:text-2xl font-bold">{user.username}</h2>
-              <Link to="/settings" className="text-sm font-medium text-blue-600 hover:text-blue-500">Edit Profile</Link>
+          <div className="flex-1 min-w-0 w-full">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+              <h2 className="text-xl sm:text-2xl font-bold truncate">{user.username}</h2>
+              <Link to="/settings" className="text-sm font-medium text-blue-600 hover:text-blue-500 shrink-0">Edit Profile</Link>
             </div>
-            <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">{user.email}</p>
-            <p className="mt-2 text-sm max-w-lg leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base mb-3">{user.email}</p>
+            <p className="text-sm max-w-lg leading-relaxed text-gray-700 dark:text-gray-300">
               {user.profile?.bio || "No bio available."}
             </p>
           </div>
         </div>
       </div>
 
-      <div className="border-b border-gray-200 dark:border-gray-800 mb-8">
-        <div className="flex space-x-8">
+      <div className="border-b border-gray-200 dark:border-gray-800 mb-8 overflow-x-auto no-scrollbar">
+        <div className="flex space-x-6 sm:space-x-8 min-w-max">
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -115,9 +115,9 @@ const AuthorProfile = () => {
 
       <div className="flex flex-col space-y-8">
         {activeTab === "my-posts" && (
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between mb-4 px-1">
             <h3 className="text-xl font-bold">Manage Content</h3>
-            <Link to="/write" className="btn-primary text-sm py-1.5 px-3">
+            <Link to="/dashboard" className="btn-primary text-sm py-1.5 px-3">
               Write New
             </Link>
           </div>

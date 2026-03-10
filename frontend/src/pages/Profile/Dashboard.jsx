@@ -119,12 +119,12 @@ const Dashboard = () => {
             />
           </div>
 
-          <div className="flex flex-col md:flex-row gap-6">
+          <div className="flex flex-col lg:flex-row gap-6">
             <div className="flex-1">
               <label className="block text-sm font-medium mb-1">
                 Featured Image
               </label>
-              <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 dark:border-gray-700 border-dashed rounded-md bg-white dark:bg-black relative overflow-hidden group h-48">
+              <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 dark:border-gray-700 border-dashed rounded-md bg-white dark:bg-black relative overflow-hidden group h-48 sm:h-64">
                 {/* Single file input spanning the entire container */}
                 <input
                   type="file"
@@ -177,7 +177,7 @@ const Dashboard = () => {
               </div>
             </div>
 
-            <div className="md:w-1/3 space-y-6">
+            <div className="lg:w-1/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
               <div>
                 <label className="block text-sm font-medium mb-1">
                   Category
